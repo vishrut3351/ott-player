@@ -58,8 +58,9 @@
                 android:id="@+id/birth"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="date of birth"
+                android:hint="Date of birth"
                 android:background="@null"
+                android:focusable="false"
                 android:textColorHint="#fff"
                 android:textSize="@dimen/_15sdp"
                 android:textColor="#fff"
@@ -147,7 +148,7 @@
                 android:id="@+id/number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="mobile no"
+                android:hint="Mobile no"
                 android:textColorHint="#fff"
                 android:inputType="number"
                 android:maxLength="10"
@@ -176,12 +177,14 @@
                 android:id="@+id/password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="password"
+                android:background="@null"
+                android:hint="Password"
+                android:inputType="textPassword|number"
+                android:textColor="#fff"
+                android:maxLength="8"
                 android:textColorHint="#fff"
                 android:textSize="@dimen/_15sdp"
-                android:background="@null"
-                android:textColor="#fff"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="@dimen/_270sdp"
@@ -201,10 +204,12 @@
                 android:id="@+id/confirm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="confirm password"
+                android:hint="Confirm Password"
                 android:textColorHint="#fff"
                 android:textSize="@dimen/_15sdp"
                 android:textColor="#fff"
+                android:maxLength="8"
+                android:inputType="textPassword|number"
                 android:background="@null"
                 android:textStyle="bold"/>
 
@@ -217,8 +222,11 @@
         </LinearLayout>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cv_continue"
             android:layout_width="@dimen/_250sdp"
             android:layout_height="@dimen/_35sdp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
             android:layout_gravity="center"
             app:cardCornerRadius="@dimen/_20sdp"
             android:layout_marginTop="@dimen/_20sdp"
