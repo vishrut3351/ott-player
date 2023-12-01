@@ -31,7 +31,7 @@
 
             <EditText
                 android:id="@+id/ll_name"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Name"
                 android:background="@null"
@@ -55,8 +55,8 @@
             android:layout_marginTop="@dimen/_20sdp">
 
             <EditText
-                android:id="@+id/birth"
-                android:layout_width="wrap_content"
+                android:id="@+id/ll_birth"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Date of birth"
                 android:background="@null"
@@ -81,8 +81,8 @@
             android:layout_marginTop="@dimen/_20sdp">
 
             <EditText
-                android:id="@+id/username"
-                android:layout_width="wrap_content"
+                android:id="@+id/ll_username"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Username"
                 android:textColorHint="#fff"
@@ -106,8 +106,8 @@
             android:layout_marginTop="@dimen/_20sdp">
 
             <EditText
-                android:id="@+id/email"
-                android:layout_width="wrap_content"
+                android:id="@+id/ll_email"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email"
                 android:textColorHint="#fff"
@@ -145,8 +145,8 @@
                     android:layout_marginRight="@dimen/_10sdp"/>
 
             <EditText
-                android:id="@+id/number"
-                android:layout_width="wrap_content"
+                android:id="@+id/ll_number"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Mobile no"
                 android:textColorHint="#fff"
@@ -174,14 +174,14 @@
             android:layout_marginTop="@dimen/_20sdp">
 
             <EditText
-                android:id="@+id/password"
-                android:layout_width="wrap_content"
+                android:id="@+id/ll_password"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:hint="Password"
-                android:inputType="textPassword|number"
-                android:textColor="#fff"
+                android:inputType="textPassword"
                 android:maxLength="8"
+                android:textColor="#fff"
                 android:textColorHint="#fff"
                 android:textSize="@dimen/_15sdp"
                 android:textStyle="bold" />
@@ -201,15 +201,15 @@
             android:layout_marginTop="@dimen/_20sdp">
 
             <EditText
-                android:id="@+id/confirm"
-                android:layout_width="wrap_content"
+                android:id="@+id/ll_confirm"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Confirm Password"
                 android:textColorHint="#fff"
                 android:textSize="@dimen/_15sdp"
                 android:textColor="#fff"
                 android:maxLength="8"
-                android:inputType="textPassword|number"
+                android:inputType="textPassword"
                 android:background="@null"
                 android:textStyle="bold"/>
 
