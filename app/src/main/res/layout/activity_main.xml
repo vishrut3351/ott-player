@@ -32,7 +32,7 @@
             <EditText
                 android:id="@+id/ll_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:hint="Name"
                 android:background="@null"
                 android:textColorHint="#fff"
@@ -57,7 +57,7 @@
             <EditText
                 android:id="@+id/ll_birth"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:hint="Date of birth"
                 android:background="@null"
                 android:focusable="false"
@@ -83,7 +83,7 @@
             <EditText
                 android:id="@+id/ll_username"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:hint="Username"
                 android:textColorHint="#fff"
                 android:background="@null"
@@ -108,7 +108,7 @@
             <EditText
                 android:id="@+id/ll_email"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:hint="Email"
                 android:textColorHint="#fff"
                 android:textSize="@dimen/_15sdp"
