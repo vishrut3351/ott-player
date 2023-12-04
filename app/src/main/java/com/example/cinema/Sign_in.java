@@ -11,9 +11,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Sign_in extends AppCompatActivity {
-TextView forgetpass;
-EditText username,password;
-boolean isUser=true;
+    TextView forgetpass;
+    EditText username, password;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,18 +27,21 @@ boolean isUser=true;
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Sign_in.this, Home.class);
-                startActivity(intent);
+                if (username.getText().toString().equals("")) {
+                    username.setError("Enter valid user name");
+                } else if (password.getText().toString().equals("")) {
+                    password.setError("Enter valid password");
+                } else {
+                    Intent intent = new Intent(Sign_in.this, Home.class);
+                    startActivity(intent);
+                }
             }
         });
 
         forgetpass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (TextUtils.isEmpty(username.getText().toString())){
-                    isUser=false;
-                    username.setError("123");
-                }
+
                 Intent intent = new Intent(Sign_in.this, Forget_Password.class);
                 startActivity(intent);
             }
